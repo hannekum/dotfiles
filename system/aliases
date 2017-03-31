@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
 
+alias pathexec='command -v'
+alias e="$EDITOR"
+alias se=sudoedit
+
 # Easier navigation: .., ..., ...., ....., ~ and -
 alias ..="cd .."
 alias ...="cd ../.."

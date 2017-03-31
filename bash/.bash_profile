@@ -1,17 +1,19 @@
 # If not running interactively, don't do anything
 [ -z "$PS1" ] && return
 
-alias pathexec='command -v'
-
 # Add `~/bin` to the `$PATH`
-PATH="$HOME/bin:$PATH";
+PATH="$HOME/bin:$PATH"
 #PATH=${HOME}/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin
-HOMEBREW_GITHUB_API_TOKEN=5c6ec70d8c8fac798c9787c8fa6bdf144631ab2e
 OS="$(uname -s)"
+EDITOR=nvim
+VISUAL="$EDITOR"
+
+HOMEBREW_GITHUB_API_TOKEN=5c6ec70d8c8fac798c9787c8fa6bdf144631ab2e
 
 export PATH
-export HOMEBREW_GITHUB_API_TOKEN
 export OS
+export EDITOR VISUAL
+export HOMEBREW_GITHUB_API_TOKEN
 
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.
